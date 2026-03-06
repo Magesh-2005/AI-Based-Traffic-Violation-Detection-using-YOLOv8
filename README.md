@@ -1,59 +1,110 @@
-# AI Smart Traffic Violation Detection using YOLOv8
+# 🚦 AI-Based Traffic Violation Detection using YOLOv8
 
-This project detects vehicles violating traffic signals using computer vision and deep learning. The system identifies vehicles crossing a stop line during a red signal and captures violation images automatically.
+This project implements a computer vision system that detects vehicles in traffic videos using the YOLOv8 object detection model. The system processes uploaded traffic videos and identifies vehicles such as cars, buses, trucks, and motorcycles using deep learning techniques.
 
-## Technologies Used
+The application provides a simple Streamlit interface where users can upload a traffic video and view real-time detection results.
 
-- Python
-- OpenCV
-- YOLOv8 (Ultralytics)
-- NumPy
+---
 
-## Features
+## 🚀 Live Demo
 
-- Real-time vehicle detection
-- Traffic signal violation detection
-- Virtual stop-line monitoring
-- Automatic violation image capture
+Hugging Face Deployment
+https://huggingface.co/spaces/YOUR_USERNAME/traffic-violation-detection
 
-## Project Structure
+---
 
-traffic-violation-detection
-│
-├── videos
-│   └── traffic.mp4
-│
-├── violations
-│
+## 📌 Features
+
+* Real-time vehicle detection using YOLOv8
+* Detects cars, buses, trucks, and motorcycles
+* Video processing using OpenCV
+* User-friendly Streamlit interface
+* Upload traffic videos and visualize detection results
+* Frame-by-frame object detection
+
+---
+
+## 🛠 Technologies Used
+
+* Python
+* YOLOv8 (Ultralytics)
+* OpenCV
+* Streamlit
+* NumPy
+
+---
+
+## 📂 Project Structure
+
+AI-Based-Traffic-Violation-Detection-using-YOLOv8
+
+├── app.py
 ├── detect.py
-│
 ├── requirements.txt
-│
-└── README.md
+├── README.md
 
-## Installation
+---
 
-Install dependencies:
+## ⚙ Installation
 
-pip install ultralytics opencv-python numpy
+### 1. Clone the repository
 
-## Run the Project
+git clone https://github.com/Magesh-2005/AI-Based-Traffic-Violation-Detection-using-YOLOv8.git
 
-python detect.py
+### 2. Navigate to the project folder
 
-## Output
+cd AI-Based-Traffic-Violation-Detection-using-YOLOv8
 
-- Detects vehicles such as cars, trucks, buses, and motorcycles
-- Identifies vehicles crossing the stop line during red signal
-- Saves violation evidence images
+### 3. Install dependencies
 
-## Applications
+pip install -r requirements.txt
 
-- Smart traffic monitoring
-- Traffic law enforcement
-- Intelligent transportation systems
+### 4. Run the application
 
-## Author
+streamlit run app.py
+
+---
+
+## 🎥 How It Works
+
+1. Upload a traffic video through the Streamlit interface.
+2. The YOLOv8 model processes each frame of the video.
+3. Vehicles such as cars, buses, trucks, and motorcycles are detected.
+4. Bounding boxes are drawn around detected vehicles.
+5. Processed frames are displayed in real time.
+
+---
+
+## 📊 Applications
+
+* Smart traffic monitoring systems
+* Traffic law enforcement
+* Intelligent transportation systems
+* Computer vision research
+* AI-based surveillance systems
+
+---
+
+## 🔮 Future Improvements
+
+* Traffic violation detection
+* Vehicle counting system
+* Traffic density analysis
+* Speed estimation
+* Dashboard analytics using Streamlit
+
+---
+
+## 👨‍💻 Author
 
 Magesh K
+
 B.Tech Artificial Intelligence and Data Science
+IFET College of Engineering
+
+GitHub:
+https://github.com/Magesh-2005
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
